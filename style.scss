@@ -111,11 +111,11 @@ figure{
    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 7px 7px 0px #cecece;
+    position: relative;
 
     img {
         border-top-left-radius: 10px;
         border-top-right-radius:10px ;
-        position: relative;
         max-width: 100%;
     }
 }
@@ -156,17 +156,16 @@ figcaption{
 
 .marque-nouveaute{
 
-    
-    p{
         border: 1px solid #99e2d0;
         width: fit-content;
         padding: 5px;
         background-color: #99e2d0;
         color: #008766;
         position: absolute;
-        bottom: 200px;
-        right: 60px;
+        position: absolute;
+        top: 20px;
+        right: 16px;
         font-weight: bolder;
     
-    }
+    
 }
