@@ -19,6 +19,7 @@ body h2 {
 .logo {
   text-align: center;
   height: 50px;
+  background-color: #ffffff;
 }
 
 .logo h1 {
@@ -48,10 +49,11 @@ figure img {
 input {
   height: 50px;
   width: 100%;
-  background-color: #cccccc;
-  box-shadow: inset 0 0 5px gray;
-  -moz-box-shadow: inset 0 0 5px gray;
-  -webkit-box-shadow: inset 0 0 5px gray;
+  background-color: #eaeaea;
+  box-shadow: inset 0 0 5px #cecece;
+  -moz-box-shadow: inset 0 0 5px #cecece;
+  -webkit-box-shadow: inset 0 0 5px #cecece;
+  border: none;
 }
 
 input::-webkit-input-placeholder {
@@ -93,8 +95,8 @@ input::placeholder {
 
 #fa-map-marker {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 29%;
+  left: 35%;
 }
 
 #localisation {
@@ -103,5 +105,107 @@ input::placeholder {
 
 #proposition-de-valeur {
   padding-top: 15px;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 40px;
+}
+
+button {
+  background: #d864da;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d864da), to(#9871b3));
+  background: linear-gradient(#d864da, #9871b3);
+  border-radius: 50px;
+  padding: 15px;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  font-family: raleway;
+  font-size: 16px;
+  border: none;
+  -webkit-box-shadow: 0px 7px 7px 0px #cecece;
+          box-shadow: 0px 7px 7px 0px #cecece;
+}
+
+#restaurants {
+  background-color: #f6f6f6;
+}
+
+figure {
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 7px 7px 0px #cecece;
+          box-shadow: 0px 7px 7px 0px #cecece;
+}
+
+figure img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  max-width: 100%;
+}
+
+figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description-restaurant {
+  width: 95%;
+  position: relative;
+  padding-left: 15px;
+}
+
+.like-restaurant {
+  width: 5%;
+}
+
+.like-restaurant .fa-heart-o {
+  vertical-align: middle;
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  bottom: 35px;
+  right: 20px;
+}
+
+.texte-description-restaurant {
+  line-height: 10px;
+}
+
+.texte-description-restaurant p {
+  text-align: justify;
+}
+
+.marque-nouveaute p {
+  border: 1px solid #99e2d0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  background-color: #99e2d0;
+  color: #008766;
+  position: absolute;
+  bottom: 200px;
+  right: 60px;
+  font-weight: bolder;
 }
 /*# sourceMappingURL=style.css.map */
