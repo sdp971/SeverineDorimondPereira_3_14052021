@@ -6,6 +6,7 @@
   <title>Ohmyfood</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,200&family=Shrikhand&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/19310601ec.js" crossorigin="anonymous"></script>
 </head>
@@ -21,13 +22,11 @@
       </div>
   </header>
   <div id="localisation">
-    <div id="fa-map-marker">
-      <i class="fas fa-map-marker-alt searchicon"></i>
+     
+    <i class="fa fa-map-marker" aria-hidden="true"></i>
+    <input class="searchbox" type="search" name="search" style="font-family:Raleway, FontAwesome"placeholder="&#xf041 Paris, Belleville">
     </div>
-    <div>
-    <input class="searchbox" type="search" name="search" placeholder="Paris, Belleville">
-    </div>
-  </div>
+  
   <section id="proposition-de-valeur">
       <h2>Réservez le menu qui </br> vous convient</h2>
       <p>Découvrez des restaurants d'exception, </br>sélectionnés par nos soins.</p>
@@ -36,6 +35,7 @@
   <section id="fonctionnement">
       
       <h2>Fonctionnement</h2>
+ 
       
       <ol>
          <li>Choisissez un restaurant</li>
@@ -45,8 +45,9 @@
       
   </section>
   <section id="restaurants">
-      
+    
     <h2>Restaurants</h2>
+    
       
       <div id="conteneur-restaurants">
 

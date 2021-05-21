@@ -14,6 +14,7 @@ body h2 {
   font-size: 24px;
   font-weight: bolder;
   font-family: raleway;
+  padding-left: 40px;
 }
 
 .logo {
@@ -34,11 +35,24 @@ body h2 {
 #bloc-page {
   max-width: 100%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /* Header */
 .searchbox {
   max-width: 100%;
+}
+
+figure {
+  min-width: 260px;
 }
 
 figure img {
@@ -91,12 +105,11 @@ input::placeholder {
 .searchicon {
   color: black;
   font-size: 16px;
-}
-
-#fa-map-marker {
   position: absolute;
-  top: 29%;
-  left: 35%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #localisation {
@@ -137,6 +150,14 @@ button {
 
 #restaurants {
   background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 figure {
