@@ -1,19 +1,29 @@
 /* Eléments principaux de la page */
 
-   
+  html{
+      font-size: 100%;
+  } 
+
 body{
     margin: 0;
     padding: 0;
+    
 
     h2,h3,p,li{
         font-family: 'Raleway', sans-serif;
         text-align: center;
     }
     h2{
-        font-size: 24px;
+        font-size: 1.5em;
         font-weight: bolder;
         font-family: raleway;
-        padding-left: 40px;
+        
+    }
+    h3 {
+        font-size: 1.0em;
+    }
+    p{
+        font-size: 0.875em;
     }
     
 }
@@ -31,44 +41,31 @@ body{
    height: 50px;
    background-color:#ffffff;
 }
-#bloc-page{
-    max-width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+
 
 /* Header */
 .searchbox{
     max-width: 100%;
 }
 
-figure{
-    min-width: 260px;
-}
+
 
 figure img{
     max-width: 100%;
     height: auto;
 }
 
-input{
-    height:50px ;
-    width:100% ;
-    background-color: #eaeaea;
-    box-shadow: inset 0 0 5px #cecece;
-    -moz-box-shadow:    inset 0 0 5px #cecece;
-    -webkit-box-shadow: inset 0 0 5px #cecece;
+input.searchbox{
     border: none;
+    background-color: transparent;
     
 
     &::placeholder {  
-        text-align: center; 
         font-size: 14px;
         font-weight: bolder;
         font-family: raleway;
         color: black;
+        
         
 }
 }
@@ -77,16 +74,26 @@ input{
 .searchicon{
     color: black;
     font-size: 16px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+      
+    
 }
 
 
 #localisation{
-    position: relative;
    
+    height:50px ;
+    width:100% ;
+    background-color: #eaeaea;
+    box-shadow: inset 0 0 5px #cecece;
+    -moz-box-shadow:    inset 0 0 5px #cecece;
+    -webkit-box-shadow: inset 0 0 5px #cecece;   
+}
+
+#localisation-input-container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
 }
 
 #proposition-de-valeur{
@@ -118,6 +125,7 @@ box-shadow: 0px 7px 7px 0px #cecece;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    flex-direction: column;
 
    
 }
@@ -131,6 +139,9 @@ figure{
         border-top-left-radius: 10px;
         border-top-right-radius:10px ;
         max-width: 100%;
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
     }
 }
 
@@ -184,3 +195,20 @@ figcaption{
     
 }
 
+ol {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    padding-left: 1.3em;
+ 
+    &:before {
+    content: "\f3cd"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+  }
+  }
+ 	
+  
