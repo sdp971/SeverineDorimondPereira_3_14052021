@@ -412,4 +412,57 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
     width: 220px;
   }
 }
+
+/* Style page 1 */
+.body-page1 h2 {
+  text-align: left;
+}
+
+.image-page-menu {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+#menus {
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.titre-restaurant-menus {
+  font-family: Shrikhand;
+  font-size: 2.0em;
+}
+
+.description-restaurant-presentation-menu {
+  padding-left: 15px;
+  bottom: 80px;
+  background-color: white;
+  border-radius: 30px;
+  position: relative;
+  padding: 20px;
+}
+
+.titre-type-repas {
+  padding-left: 40px;
+  font-weight: normal;
+}
+
+.titre-type-repas:hover {
+  border-bottom: solid 2px #99e2d0;
+  color: #99e2d0;
+}
 /*# sourceMappingURL=style.css.map */

@@ -351,3 +351,61 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
         width: 220px;
     }
 }
+
+/* Style page 1 */
+
+
+.body-page1{
+
+    h2 {
+        text-align: left;
+    }
+}
+
+.image-page-menu{
+
+   
+        max-width: 100%;
+        object-fit: cover;
+        width: 100%;
+       
+
+   
+        
+    
+}
+
+#menus{
+    background-color: #f6f6f6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: column;
+    padding-bottom: 40px;  
+}
+.titre-restaurant-menus{
+    font-family: Shrikhand;
+    font-size: 2.0em;
+}
+.description-restaurant-presentation-menu{
+    
+    padding-left: 15px;
+    bottom: 80px;
+    background-color:white;
+    border-radius: 30px;
+    position: relative;
+    padding: 20px;
+    
+}
+
+.titre-type-repas{
+    padding-left: 40px;
+    font-weight: normal;
+
+    &:hover{
+        
+  
+            border-bottom:solid 2px #99e2d0;
+            color:#99e2d0;
+    }
+}
