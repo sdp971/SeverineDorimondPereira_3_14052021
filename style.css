@@ -407,11 +407,38 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   text-align: left;
 }
 
+#bloc-page header {
+  position: relative;
+}
+
 .image-page-menu {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+
+.logo-page-restaurant h1 {
+  font-size: 2.0em;
+  font-family: shrikhand;
+  text-align: center;
+}
+
+.logo-page-restaurant h1::before {
+  content: "\f060";
+  /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  color: #353535;
+  font-size: 0.8em;
+  position: absolute;
+  left: 9px;
+  bottom: 8px;
+}
+
+.logo-page-restaurant a {
+  text-decoration: none;
+  color: black;
 }
 
 .banner-page-menu {

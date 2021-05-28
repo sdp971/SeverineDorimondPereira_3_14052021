@@ -365,7 +365,11 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
         text-align: left;
     }
 }
-
+#bloc-page{
+    header{
+        position: relative;
+    }
+}
 .image-page-menu{
 
    
@@ -378,6 +382,33 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
         
     
 }
+.logo-page-restaurant{
+
+    h1{
+        font-size: 2.0em;
+        font-family: shrikhand;
+        text-align: center;
+     
+        
+    }
+    h1::before{
+        content: "\f060"; /* FontAwesome Unicode */
+        font-family: FontAwesome;
+        display: inline-block;
+        color: #353535;
+        font-size: 0.8em;
+        position: absolute;
+        left: 9px;
+        bottom: 8px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+}
+
 
 .banner-page-menu{
     display: flex;
@@ -414,11 +445,11 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
     flex-wrap: wrap;
 
     .fa-heart-o{
-        position: absolute;
-        right: 20px;
-        top: 45px;
-        font-weight: normal;
-        font-size: 2.0em;
+    position: absolute;
+    right: 20px;
+    top: 45px;
+    font-weight: normal;
+    font-size: 2.0em;
     }
     
 }
@@ -431,13 +462,13 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
     &:after{
         
   
-            content: '';
-            position: absolute;
-            width: 10%;
-            display: block;
-            height: 3px;
-            background-color:#99e2d0;
-            bottom: -5px;
+    content: '';
+    position: absolute;
+    width: 10%;
+    display: block;
+    height: 3px;
+    background-color:#99e2d0;
+    bottom: -5px;
     }
 }
 
