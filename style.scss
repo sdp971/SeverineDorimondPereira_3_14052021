@@ -391,16 +391,7 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
      
         
     }
-    h1::before{
-        content: "\f060"; /* FontAwesome Unicode */
-        font-family: FontAwesome;
-        display: inline-block;
-        color: #353535;
-        font-size: 0.8em;
-        position: absolute;
-        left: 9px;
-        bottom: 8px;
-    }
+   
 
     a{
         text-decoration: none;
@@ -427,7 +418,7 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
 }
 .titre-restaurant-menus{
     font-family: Shrikhand;
-    font-size: 2.0em;
+    font-size: 1.9em;
     width: 95%;
     position: relative;
 
@@ -449,7 +440,7 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
     right: 20px;
     top: 45px;
     font-weight: normal;
-    font-size: 2.0em;
+    font-size: 1.9em;
     }
     
 }
@@ -464,11 +455,12 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
   
     content: '';
     position: absolute;
-    width: 10%;
+    width: 15%;
     display: block;
     height: 3px;
     background-color:#99e2d0;
     bottom: -5px;
+    max-width: 50px;
     }
 }
 
@@ -489,7 +481,7 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
     font-size: 1.0em;
     font-weight: normal;
     position: absolute;
-    bottom: 0px;
+    bottom: -8px;
     right: 10px;
 }
 
@@ -506,4 +498,18 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
         font-size: 0.8em;
     }
     
+}
+
+.lien-restaurants{
+    text-decoration: none;
+    color: black;
+}
+
+.fa-arrow-left{
+    display: inline-block;
+    color: #353535;
+    font-size: 1.8em;
+    position: absolute;
+    left: 9px;
+    bottom: 8px;
 }
