@@ -572,4 +572,76 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   100% {
     transform: rotate(360deg);
   }
+}
+/* Animation apparition progressive des plats */
+figure {
+  -webkit-animation: wave 1s linear 100ms forwards;
+  animation: wave 1s linear 100ms forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes wave {
+  0% {
+    transform: translateY(35px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* Les "delays" pour les pages de menus */
+figure:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+figure:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+figure:nth-child(3) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+figure:nth-child(4) {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+figure:nth-child(5) {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+figure:nth-child(6) {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+figure:nth-child(7) {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+figure:nth-child(8) {
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
+figure:nth-child(9) {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
 }/*# sourceMappingURL=style.css.map */
