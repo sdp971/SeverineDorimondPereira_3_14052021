@@ -165,6 +165,40 @@ figcaption {
   right: 20px;
 }
 
+.fa-heart {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  font-size: 25px;
+  position: absolute;
+  bottom: 35px;
+  right: 20px;
+  opacity: 0;
+}
+
+.like-restaurant:hover > .fa-heart {
+  -webkit-animation: remplissage 0.5s linear 100ms 1 forwards;
+          animation: remplissage 0.5s linear 100ms 1 forwards;
+}
+
+@-webkit-keyframes remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .texte-description-restaurant {
   line-height: 10px;
 }
@@ -395,6 +429,13 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   right: 20px;
   top: 45px;
   font-weight: normal;
+  font-size: 1.9em;
+}
+
+.hidden {
+  position: absolute;
+  top: 45px;
+  right: 20px;
   font-size: 1.9em;
 }
 
