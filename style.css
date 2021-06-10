@@ -115,6 +115,11 @@ button {
   min-width: 250px;
 }
 
+button:hover {
+  filter: brightness(1.2);
+  box-shadow: 0px 10px 10px 0px #686666;
+}
+
 #restaurants {
   background-color: #f6f6f6;
   display: flex;
@@ -251,6 +256,10 @@ figcaption {
   border-radius: 30px;
   width: 100%;
   position: relative;
+}
+.li-menu-fonctionnement-un:hover, .li-menu-fonctionnement-deux:hover, .li-menu-fonctionnement-trois:hover {
+  background-color: #ebe0ec;
+  box-shadow: 0px 10px 10px 0px #686666;
 }
 
 .li-menu-fonctionnement-un::before {
@@ -578,6 +587,8 @@ figure {
   -webkit-animation: wave 1s linear 100ms forwards;
   animation: wave 1s linear 100ms forwards;
   opacity: 0;
+  transition: margin-right 100ms ease-in-out;
+  margin-right: 0px;
 }
 
 @-webkit-keyframes wave {
