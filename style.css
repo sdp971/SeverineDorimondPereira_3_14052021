@@ -7,6 +7,12 @@ html {
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
 }
 body h2, body h3, body p, body li {
   font-family: "Raleway", sans-serif;
@@ -16,6 +22,7 @@ body h2 {
   font-size: 1.5em;
   font-weight: bolder;
   font-family: raleway;
+  width: 100%;
 }
 body h3 {
   font-size: 1em;
@@ -462,8 +469,28 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   max-width: 50px;
 }
 
+#conteneur-restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 #conteneur-restaurants figure {
   position: relative;
+  margin: 10px;
+  width: 820px;
+}
+
+#conteneur-menus {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#conteneur-menus figure {
+  position: relative;
+  margin: 10px;
+  width: 450px;
 }
 
 .description-menus {
