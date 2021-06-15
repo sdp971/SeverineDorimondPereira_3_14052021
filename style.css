@@ -5,8 +5,6 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -108,7 +106,7 @@ button {
   background: #d864da;
   background: linear-gradient(#d864da, #9871b3);
   border-radius: 50px;
-  padding: 15px;
+  height: 60px;
   color: #ffffff;
   display: inline-block;
   text-align: center;
@@ -128,7 +126,7 @@ button:hover {
   background-color: #f6f6f6;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
   padding-bottom: 40px;
 }
 
@@ -422,7 +420,7 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
 .titre-restaurant-menus {
   font-family: Shrikhand;
   font-size: 1.9em;
-  width: 95%;
+  width: 90%;
   position: relative;
 }
 
@@ -477,19 +475,42 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
 #conteneur-restaurants figure {
   position: relative;
   margin: 10px;
-  width: 820px;
+  max-width: 820px;
+  min-width: 220px;
+  height: auto;
 }
 
 #conteneur-menus {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 #conteneur-menus figure {
   position: relative;
   margin: 10px;
-  width: 450px;
+  width: 100%;
+  max-width: 460px;
+  min-width: 260px;
+  overflow: hidden;
+}
+#conteneur-menus figure:active .checkright {
+  -webkit-animation: apparition-check 1s forwards;
+          animation: apparition-check 1s forwards;
+}
+#conteneur-menus figure:active .texte-prix {
+  -webkit-animation: retrecissement 1s forwards;
+          animation: retrecissement 1s forwards;
+}
+#conteneur-menus figure:active .fa-check-circle {
+  -webkit-animation: rotation-check 1s forwards;
+          animation: rotation-check 1s forwards;
+}
+#conteneur-menus figure:active .texte-description-menus h3, #conteneur-menus figure:active .texte-description-menus p {
+  text-overflow: ellipsis;
+  width: 120px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .description-menus {
@@ -502,16 +523,22 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   font-size: 1em;
   font-weight: normal;
   position: absolute;
-  bottom: -8px;
-  right: 10px;
+  bottom: -6px;
+  right: 9px;
+  border: 1px solid black;
+  width: 50px;
 }
 
 .texte-description-menus {
   padding: 10px 10px 10px 0px;
+  width: 240px;
+  position: relative;
+  overflow: hidden;
 }
 .texte-description-menus h3, .texte-description-menus p {
   text-align: left;
   margin: 0px;
+  border: 1px solid black;
 }
 .texte-description-menus br {
   display: none;
@@ -679,4 +706,73 @@ figure:nth-child(8) {
 figure:nth-child(9) {
   -webkit-animation-delay: 4s;
   animation-delay: 4s;
+}
+
+.checkright {
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  right: -60px;
+  width: 60px;
+  background: #99e2d0;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-check-circle {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+@-webkit-keyframes apparition-check {
+  0% {
+    right: -60px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes apparition-check {
+  0% {
+    right: -60px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@-webkit-keyframes retrecissement {
+  0% {
+    right: 9px;
+  }
+  100% {
+    right: 65px;
+  }
+}
+@keyframes retrecissement {
+  0% {
+    right: 9px;
+  }
+  100% {
+    right: 65px;
+  }
+}
+@-webkit-keyframes rotation-check {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation-check {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */
