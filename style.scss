@@ -15,13 +15,13 @@ body{
     
 
     h2,h3,p,li{
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-align: center;
     }
     h2{
         font-size: 1.5em;
         font-weight: bolder;
-        font-family: raleway;
+        font-family: 'Roboto', sans-serif;
         width: 100%;
         
     }
@@ -69,7 +69,7 @@ input.searchbox{
     &::placeholder {  
         font-size: 14px;
         font-weight: bolder;
-        font-family: raleway;
+        font-family: 'Roboto', sans-serif;
         color: black;
         
         
@@ -120,7 +120,7 @@ height:       60px;
 color:         #ffffff;
 display:       inline-block;
 text-align:    center;
-font-family: raleway;
+font-family: 'Roboto', sans-serif;
 font-size: 16px;
 border: none;
 box-shadow: 0px 7px 7px 0px #cecece;
@@ -357,7 +357,7 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
 
 .cta-footer-1,.cta-footer-2,.cta-footer-3, .cta-footer-4{
     color: #ffffff;
-    font-family: raleway;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
 
