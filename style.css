@@ -156,9 +156,6 @@ button:hover {
   padding-left: 15px;
 }
 
-.like-restaurant {
-  width: 5%;
-}
 .like-restaurant .fa-heart-o {
   vertical-align: middle;
   color: black;
@@ -500,21 +497,22 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   -webkit-animation: rotation-check 1s forwards;
           animation: rotation-check 1s forwards;
 }
-.conteneur-menus .bloc:active .texte-description-menus h3 {
-  text-overflow: ellipsis;
-  width: 80%;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.conteneur-menus .bloc:active .texte-description-menus p {
-  text-overflow: ellipsis;
-  width: 80%;
-  overflow: hidden;
-  white-space: nowrap;
+@media all and (min-width: 280px) and (max-width: 323px) {
+  .conteneur-menus .bloc:active .texte-description-menus h3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 96%;
+  }
+  .conteneur-menus .bloc:active .texte-description-menus p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 80%;
+  }
 }
 
 .description-menus {
-  width: 95%;
   padding-left: 15px;
   max-width: 100%;
 }
@@ -525,12 +523,16 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   position: absolute;
   bottom: -6px;
   right: 9px;
-  width: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .texte-description-menus {
   padding: 10px 10px 10px 0px;
-  width: 240px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   position: relative;
   overflow: hidden;
 }

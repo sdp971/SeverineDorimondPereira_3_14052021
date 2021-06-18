@@ -171,7 +171,7 @@ box-shadow: 0px 10px 10px 0px #686666;
    
 }
 .like-restaurant{
-    width: 5%;
+    
    .fa-heart-o{
        vertical-align: middle;
        color:black;
@@ -573,20 +573,22 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
            .fa-check-circle{
             animation: rotation-check 1s forwards;
            }
-
+           @media all and (min-width: 280px) and (max-width: 323px){
            .texte-description-menus h3 {
             text-overflow: ellipsis;
-            width: 80%;
-            overflow: hidden;
             white-space: nowrap;
+            overflow: hidden;
+            width: 96%;
+           
         }
         .texte-description-menus p{
             text-overflow: ellipsis;
-            width: 80%;
+            white-space: nowrap;
             overflow: hidden;
-            white-space: nowrap; 
+            width: 80%;
+           
         }
-
+    }
            
        }
         
@@ -601,7 +603,7 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
 
 
 .description-menus{
-    width: 95%;
+    
     padding-left: 15px;
     max-width: 100%;
  
@@ -617,14 +619,14 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
     bottom: -6px;
     right: 9px;
     
-    width: 50px;
+    width: fit-content;
     
     
 }
 
 .texte-description-menus{
     padding: 10px 10px 10px 0px;
-    width: 240px;
+    width: fit-content;
     position: relative;
     
 
