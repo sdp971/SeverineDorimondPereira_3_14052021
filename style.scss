@@ -264,7 +264,7 @@ box-shadow: 0px 10px 10px 0px #686666;
   .li-menu-fonctionnement-un,.li-menu-fonctionnement-deux,.li-menu-fonctionnement-trois {
     padding-left: 1.0em;
     display: inline-block;
-    margin: 0.3em;
+    margin: 0.9em;
     -webkit-box-shadow: inset -1px 3px 8px 5px #f6f6f6, 2px 5px 16px 0px #e6e6e6, 50px 50px 50px 50px rgba(246,246,246,0.06); 
 box-shadow: inset -1px 3px 8px 5px #f6f6f6, 2px 5px 16px 0px #e6e6e6, 50px 50px 50px 50px rgba(246,246,246,0.06);
     background-color: #f0eef3;
@@ -367,6 +367,7 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
     
     li{
         text-align: left;
+        margin: 0.5em;
     }
 }
 
@@ -392,7 +393,7 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
             width: 22px;
             padding-bottom: 5px;
             left: -11px;
-            top: -5px;
+           
         }
 
 
@@ -400,7 +401,7 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
 
     .li-menu-fonctionnement-un,.li-menu-fonctionnement-deux,.li-menu-fonctionnement-trois{
         width: 220px;
-        padding:15px;
+        padding:25px;
     }
 
 
@@ -575,13 +576,13 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
 
            .texte-description-menus h3 {
             text-overflow: ellipsis;
-            width: 180px;
+            width: 80%;
             overflow: hidden;
             white-space: nowrap;
         }
         .texte-description-menus p{
             text-overflow: ellipsis;
-            width: 120px;
+            width: 80%;
             overflow: hidden;
             white-space: nowrap; 
         }
