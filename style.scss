@@ -335,6 +335,20 @@ footer{
     
 }
 
+.footer_column{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo_footer{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 40px;
+    }
+
 footer,.footer_column,.titre-logo-footer,.logo-footer{
     background-color:#353535 ;
     
@@ -364,10 +378,15 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
 .footer_links{
     list-style-type: none;
     padding-bottom: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
     
     li{
         text-align: left;
         margin: 0.5em;
+        width: 250px;
     }
 }
 
@@ -558,37 +577,39 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
         max-width: 460px; 
         min-width: 260px;
         overflow: hidden;
+
         
-       &:active{
+       &:hover{
            
            .checkright{
                animation: apparition-check 1s forwards;
               
            }
 
-           .texte-prix{
-               animation: retrecissement 1s forwards;
-           }
+          
 
+           .description-menus{
+            animation: agrandissement 1s forwards;
+           }
            .fa-check-circle{
             animation: rotation-check 1s forwards;
            }
-           @media all and (min-width: 280px) and (max-width: 323px){
+          
            .texte-description-menus h3 {
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-            width: 96%;
+            
            
         }
         .texte-description-menus p{
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-            width: 80%;
+           
            
         }
-    }
+    
            
        }
         
@@ -604,20 +625,29 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
 
 .description-menus{
     
-    padding-left: 15px;
+    
     max-width: 100%;
- 
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     
-    
+   .like-restaurant{
+       width: 10%;
+       display: flex;
+       align-items: baseline;
+       margin: 10px 10px 0px 0px;
+       height: 46px;
+   } 
     
 }
 
 .texte-prix{
     font-size: 1.0em;
     font-weight: normal;
-    position: absolute;
-    bottom: -6px;
-    right: 9px;
+   
     
     width: fit-content;
     
@@ -628,7 +658,8 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
     padding: 10px 10px 10px 0px;
     width: fit-content;
     position: relative;
-    
+    width: 90%;
+    padding-left: 10px;
 
         overflow: hidden;
     
@@ -646,6 +677,7 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
     }
     
 }
+
 
 .lien-restaurants{
     text-decoration: none;
@@ -808,7 +840,7 @@ animation-delay: 2.5s;}
     right: -60px;
     width: 60px;
     background:#99e2d0;
-    border-radius:10px 10px 10px 10px;
+    border-radius:0px 10px 10px 0px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -837,13 +869,15 @@ align-items: center;
     
 }
 
-@keyframes retrecissement{
+
+
+@keyframes agrandissement{
     0%{
-        right: 9px;
+        width: 90%;
     }
 
     100%{
-        right:65px;
+        width:80%;
     }
 }
 

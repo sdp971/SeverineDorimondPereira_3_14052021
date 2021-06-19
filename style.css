@@ -303,6 +303,20 @@ footer {
   flex-direction: column;
 }
 
+.footer_column {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.logo_footer {
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 40px;
+}
+
 footer, .footer_column, .titre-logo-footer, .logo-footer {
   background-color: #353535;
 }
@@ -329,10 +343,15 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
 .footer_links {
   list-style-type: none;
   padding-bottom: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
 }
 .footer_links li {
   text-align: left;
   margin: 0.5em;
+  width: 250px;
 }
 
 .cta-footer-2::before {
@@ -485,44 +504,49 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   min-width: 260px;
   overflow: hidden;
 }
-.conteneur-menus .bloc:active .checkright {
+.conteneur-menus .bloc:hover .checkright {
   -webkit-animation: apparition-check 1s forwards;
           animation: apparition-check 1s forwards;
 }
-.conteneur-menus .bloc:active .texte-prix {
-  -webkit-animation: retrecissement 1s forwards;
-          animation: retrecissement 1s forwards;
+.conteneur-menus .bloc:hover .description-menus {
+  -webkit-animation: agrandissement 1s forwards;
+          animation: agrandissement 1s forwards;
 }
-.conteneur-menus .bloc:active .fa-check-circle {
+.conteneur-menus .bloc:hover .fa-check-circle {
   -webkit-animation: rotation-check 1s forwards;
           animation: rotation-check 1s forwards;
 }
-@media all and (min-width: 280px) and (max-width: 323px) {
-  .conteneur-menus .bloc:active .texte-description-menus h3 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 96%;
-  }
-  .conteneur-menus .bloc:active .texte-description-menus p {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 80%;
-  }
+.conteneur-menus .bloc:hover .texte-description-menus h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.conteneur-menus .bloc:hover .texte-description-menus p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .description-menus {
-  padding-left: 15px;
   max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.description-menus .like-restaurant {
+  width: 10%;
+  display: flex;
+  align-items: baseline;
+  margin: 10px 10px 0px 0px;
+  height: 46px;
 }
 
 .texte-prix {
   font-size: 1em;
   font-weight: normal;
-  position: absolute;
-  bottom: -6px;
-  right: 9px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -534,6 +558,8 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
+  width: 90%;
+  padding-left: 10px;
   overflow: hidden;
 }
 .texte-description-menus h3, .texte-description-menus p {
@@ -715,7 +741,7 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   right: -60px;
   width: 60px;
   background: #99e2d0;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 0px 10px 10px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -744,20 +770,20 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
     right: 0px;
   }
 }
-@-webkit-keyframes retrecissement {
+@-webkit-keyframes agrandissement {
   0% {
-    right: 9px;
+    width: 90%;
   }
   100% {
-    right: 65px;
+    width: 80%;
   }
 }
-@keyframes retrecissement {
+@keyframes agrandissement {
   0% {
-    right: 9px;
+    width: 90%;
   }
   100% {
-    right: 65px;
+    width: 80%;
   }
 }
 @-webkit-keyframes rotation-check {
