@@ -142,8 +142,7 @@ box-shadow: 0px 10px 10px 0px #686666;
    flex-wrap: wrap;
     padding-bottom: 40px;
 
-   
-}
+  }
 .bloc{
    background-color: #ffffff;
     border-radius: 10px;
@@ -157,6 +156,7 @@ box-shadow: 0px 10px 10px 0px #686666;
         object-fit: cover;
         width: 100%;
         max-height: 350px;
+        
     }
 }
 
@@ -286,7 +286,7 @@ box-shadow: inset -1px 3px 8px 5px #f6f6f6, 2px 5px 16px 0px #e6e6e6, 50px 50px 
     content: "\f3cd"; /* FontAwesome Unicode */
     font-family: FontAwesome;
     display: inline-block;
-    width: 2.0em; /* same as padding-left set on li */
+    width: 2.0em; 
       
     
 }
@@ -296,7 +296,7 @@ box-shadow: inset -1px 3px 8px 5px #f6f6f6, 2px 5px 16px 0px #e6e6e6, 50px 50px 
     content: "\f03a"; /* FontAwesome Unicode */
     font-family: FontAwesome;
     display: inline-block;
-    width: 2.0em; /* same as padding-left set on li */
+    width: 2.0em; 
     
   }
 
@@ -304,7 +304,7 @@ box-shadow: inset -1px 3px 8px 5px #f6f6f6, 2px 5px 16px 0px #e6e6e6, 50px 50px 
     content: "\f54e"; /* FontAwesome Unicode */
     font-family: FontAwesome;
     display: inline-block;
-    width: 2.0em; /* same as padding-left set on li */
+    width: 2.0em; 
   }
 
      
@@ -358,7 +358,7 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
     font-family: Shrikhand;
     font-weight: bolder;
     font-size: 1.3em;
-    padding-left: 40px;
+   
     text-align: left;
 }
 
@@ -381,7 +381,7 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    
     
     li{
         text-align: left;
@@ -394,14 +394,14 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
     content: "\f4c4"; /* FontAwesome Unicode */
     font-family: FontAwesome;
     display: inline-block;
-    width: 2.0em; /* same as padding-left set on li */
+    width: 2.0em; 
 }
 
 .cta-footer-1::before{
     content: "\f2e7"; /* FontAwesome Unicode */
     font-family: FontAwesome;
     display: inline-block;
-    width: 2.0em; /* same as padding-left set on li */
+    width: 2.0em;
 }
 
 
@@ -432,6 +432,7 @@ footer,.footer_column,.titre-logo-footer,.logo-footer{
 
     h2 {
         text-align: left;
+        padding: 0px 15px 0px 15px;
     }
 }
 #bloc-page{
@@ -890,9 +891,83 @@ align-items: center;
     }
 }
 
+/* media queries pour harmoniser apparence entre les navigateurs */
+
+@media (min-width: 286px) and (max-width: 414px){
+    .bloc img{
+        min-width: 350px;
+        height: 236px;
+        max-width: 394px;
+       
+    }
+
+    #restaurants{
+          
+       h2{
+          width: 40%;
+       }
+    }
+
+    #fonctionnement{
+        h2{
+            width: 55%;
+        }
+    }
 
 
+    .footer_links li {
+        text-align: left;
+        margin: 0.5em;
+        width: 300px;}
+}
 
+@media (min-width: 415px) and (max-width: 800px){
+    .bloc img{
+        
+        height: 350px;
+        width: 475px;
+       
+    }
+
+    .footer_links li {
+        text-align: center;
+        margin: 0.5em;
+        width: 350px;}
+
+        .titre-logo-footer {
+           
+            text-align: center;
+            width: 100%;
+}
+}
+
+@media (min-width: 801px) and (max-width: 1850px){
+    .bloc img{
+        
+        height: 350px;
+        width: 524px;
+       
+    }
+
+    .footer_links li {
+        text-align: center;
+       
+}
+}
+
+@media (min-width: 1851px) and (max-width: 1985px){
+    .bloc img{
+        
+        height: 350px;
+        width: 840px;
+       
+    }
+
+    .footer_links li {
+        text-align: center;
+        width: 400px;
+}
+}
 
 
 

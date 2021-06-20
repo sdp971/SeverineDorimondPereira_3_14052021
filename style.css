@@ -261,7 +261,6 @@ button:hover {
   font-family: FontAwesome;
   display: inline-block;
   width: 2em;
-  /* same as padding-left set on li */
 }
 
 .li-menu-fonctionnement-deux::before {
@@ -270,7 +269,6 @@ button:hover {
   font-family: FontAwesome;
   display: inline-block;
   width: 2em;
-  /* same as padding-left set on li */
 }
 
 .li-menu-fonctionnement-trois::before {
@@ -279,7 +277,6 @@ button:hover {
   font-family: FontAwesome;
   display: inline-block;
   width: 2em;
-  /* same as padding-left set on li */
 }
 
 .chiffre-item {
@@ -325,7 +322,6 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   font-family: Shrikhand;
   font-weight: bolder;
   font-size: 1.3em;
-  padding-left: 40px;
   text-align: left;
 }
 
@@ -346,7 +342,6 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-around;
 }
 .footer_links li {
   text-align: left;
@@ -360,7 +355,6 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   font-family: FontAwesome;
   display: inline-block;
   width: 2em;
-  /* same as padding-left set on li */
 }
 
 .cta-footer-1::before {
@@ -369,7 +363,6 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   font-family: FontAwesome;
   display: inline-block;
   width: 2em;
-  /* same as padding-left set on li */
 }
 
 .chiffre-item {
@@ -387,6 +380,7 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
 /* Style page 1 */
 .body-page1 h2 {
   text-align: left;
+  padding: 0px 15px 0px 15px;
 }
 
 #bloc-page header {
@@ -800,5 +794,65 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+/* media queries pour harmoniser apparence entre les navigateurs */
+@media (min-width: 286px) and (max-width: 414px) {
+  .bloc img {
+    min-width: 350px;
+    height: 236px;
+    max-width: 394px;
+  }
+
+  #restaurants h2 {
+    width: 40%;
+  }
+
+  #fonctionnement h2 {
+    width: 55%;
+  }
+
+  .footer_links li {
+    text-align: left;
+    margin: 0.5em;
+    width: 300px;
+  }
+}
+@media (min-width: 415px) and (max-width: 800px) {
+  .bloc img {
+    height: 350px;
+    width: 475px;
+  }
+
+  .footer_links li {
+    text-align: center;
+    margin: 0.5em;
+    width: 350px;
+  }
+
+  .titre-logo-footer {
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (min-width: 801px) and (max-width: 1850px) {
+  .bloc img {
+    height: 350px;
+    width: 524px;
+  }
+
+  .footer_links li {
+    text-align: center;
+  }
+}
+@media (min-width: 1851px) and (max-width: 1985px) {
+  .bloc img {
+    height: 350px;
+    width: 840px;
+  }
+
+  .footer_links li {
+    text-align: center;
+    width: 400px;
   }
 }/*# sourceMappingURL=style.css.map */
