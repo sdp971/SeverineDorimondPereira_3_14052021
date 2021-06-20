@@ -322,6 +322,7 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   font-family: Shrikhand;
   font-weight: bolder;
   font-size: 1.3em;
+  margin: 0px;
   text-align: left;
 }
 
@@ -338,7 +339,6 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
 
 .footer_links {
   list-style-type: none;
-  padding-bottom: 45px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -825,7 +825,7 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   }
 
   .footer_links li {
-    text-align: center;
+    text-align: left;
     margin: 0.5em;
     width: 350px;
   }
