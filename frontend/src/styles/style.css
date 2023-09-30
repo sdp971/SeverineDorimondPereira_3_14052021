@@ -5,11 +5,11 @@ html {
 }
 
 body {
-  /* display: flex;
-  flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
   margin: auto;
   align-items: center;
-  /* width: 100%; */
+  width: 100%;
 }
 body h2, body h3, body p, body li {
   font-family: "Roboto", sans-serif;
@@ -54,18 +54,6 @@ body p {
 input.searchbox {
   border: none;
   background-color: transparent;
-}
-input.searchbox::-moz-placeholder {
-  font-size: 14px;
-  font-weight: bolder;
-  font-family: "Roboto", sans-serif;
-  color: black;
-}
-input.searchbox:-ms-input-placeholder {
-  font-size: 14px;
-  font-weight: bolder;
-  font-family: "Roboto", sans-serif;
-  color: black;
 }
 input.searchbox::placeholder {
   font-size: 14px;
@@ -125,7 +113,7 @@ button:hover {
 #restaurants {
   background-color: #f6f6f6;
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   padding-bottom: 40px;
 }
@@ -140,8 +128,7 @@ button:hover {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   max-height: 350px;
 }
@@ -177,17 +164,7 @@ button:hover {
 }
 
 .like-restaurant:hover > .fa-heart {
-  -webkit-animation: remplissage 0.5s linear 100ms 1 forwards;
-          animation: remplissage 0.5s linear 100ms 1 forwards;
-}
-
-@-webkit-keyframes remplissage {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: remplissage 0.5s linear 100ms 1 forwards;
 }
 
 @keyframes remplissage {
@@ -207,8 +184,6 @@ button:hover {
 
 .marque-nouveaute {
   border: 1px solid transparent;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 5px;
   background-color: #99e2d0;
@@ -244,6 +219,7 @@ button:hover {
   padding-left: 1em;
   display: inline-block;
   margin: 0.9em;
+  -webkit-box-shadow: inset -1px 3px 8px 5px #f6f6f6, 2px 5px 16px 0px #e6e6e6, 50px 50px 50px 50px rgba(246, 246, 246, 0.06);
   box-shadow: inset -1px 3px 8px 5px #f6f6f6, 2px 5px 16px 0px #e6e6e6, 50px 50px 50px 50px rgba(246, 246, 246, 0.06);
   background-color: #f0eef3;
   padding: 25px;
@@ -256,24 +232,21 @@ button:hover {
 }
 
 .li-menu-fonctionnement-un::before {
-  content: "";
-  /* FontAwesome Unicode */
+  content: "\f3cd"; /* FontAwesome Unicode */
   font-family: FontAwesome;
   display: inline-block;
   width: 2em;
 }
 
 .li-menu-fonctionnement-deux::before {
-  content: "";
-  /* FontAwesome Unicode */
+  content: "\f03a"; /* FontAwesome Unicode */
   font-family: FontAwesome;
   display: inline-block;
   width: 2em;
 }
 
 .li-menu-fonctionnement-trois::before {
-  content: "";
-  /* FontAwesome Unicode */
+  content: "\f54e"; /* FontAwesome Unicode */
   font-family: FontAwesome;
   display: inline-block;
   width: 2em;
@@ -350,16 +323,14 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
 }
 
 .cta-footer-2::before {
-  content: "";
-  /* FontAwesome Unicode */
+  content: "\f4c4"; /* FontAwesome Unicode */
   font-family: FontAwesome;
   display: inline-block;
   width: 2em;
 }
 
 .cta-footer-1::before {
-  content: "";
-  /* FontAwesome Unicode */
+  content: "\f2e7"; /* FontAwesome Unicode */
   font-family: FontAwesome;
   display: inline-block;
   width: 2em;
@@ -389,8 +360,7 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
 
 .image-page-menu {
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -499,16 +469,13 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   overflow: hidden;
 }
 .conteneur-menus .bloc:hover .checkright {
-  -webkit-animation: apparition-check 1s forwards;
-          animation: apparition-check 1s forwards;
+  animation: apparition-check 1s forwards;
 }
 .conteneur-menus .bloc:hover .description-menus {
-  -webkit-animation: agrandissement 1s forwards;
-          animation: agrandissement 1s forwards;
+  animation: agrandissement 1s forwards;
 }
 .conteneur-menus .bloc:hover .fa-check-circle {
-  -webkit-animation: rotation-check 1s forwards;
-          animation: rotation-check 1s forwards;
+  animation: rotation-check 1s forwards;
 }
 .conteneur-menus .bloc:hover .texte-description-menus h3 {
   text-overflow: ellipsis;
@@ -541,15 +508,11 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
 .texte-prix {
   font-size: 1em;
   font-weight: normal;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 
 .texte-description-menus {
   padding: 10px 10px 10px 0px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   position: relative;
   width: 90%;
@@ -589,8 +552,7 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   border-top: 20px solid #FF79DA;
   border-bottom: 20px solid #9356dc;
   border-radius: 50%;
-  -webkit-animation: spinner 1.2s linear infinite;
-          animation: spinner 1.2s linear infinite;
+  animation: spinner 1.2s linear infinite;
 }
 
 /*Positionnement centré spin loader*/
@@ -610,20 +572,7 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
 }
 
 .spinner.hidden {
-  -webkit-animation: disappear 3s linear forwards;
-          animation: disappear 3s linear forwards;
-}
-
-@-webkit-keyframes disappear {
-  0% {
-    transform: scale(1);
-  }
-  99.9% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
+  animation: disappear 3s linear forwards;
 }
 
 @keyframes disappear {
@@ -635,14 +584,6 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   }
   100% {
     transform: scale(0);
-  }
-}
-@-webkit-keyframes spinner {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 @keyframes spinner {
@@ -747,15 +688,6 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
   text-align: center;
 }
 
-@-webkit-keyframes apparition-check {
-  0% {
-    right: -60px;
-  }
-  100% {
-    right: 0px;
-  }
-}
-
 @keyframes apparition-check {
   0% {
     right: -60px;
@@ -764,28 +696,12 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
     right: 0px;
   }
 }
-@-webkit-keyframes agrandissement {
-  0% {
-    width: 90%;
-  }
-  100% {
-    width: 80%;
-  }
-}
 @keyframes agrandissement {
   0% {
     width: 90%;
   }
   100% {
     width: 80%;
-  }
-}
-@-webkit-keyframes rotation-check {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 @keyframes rotation-check {
@@ -803,15 +719,12 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
     height: 236px;
     max-width: 394px;
   }
-
   #restaurants h2 {
     width: 40%;
   }
-
   #fonctionnement h2 {
     width: 55%;
   }
-
   .footer_links li {
     text-align: left;
     margin: 0.5em;
@@ -823,13 +736,11 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
     height: 350px;
     width: 475px;
   }
-
   .footer_links li {
     text-align: left;
     margin: 0.5em;
     width: 350px;
   }
-
   .titre-logo-footer {
     text-align: center;
     width: 100%;
@@ -840,7 +751,6 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
     height: 350px;
     width: 524px;
   }
-
   .footer_links li {
     text-align: center;
   }
@@ -850,7 +760,6 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
     height: 350px;
     width: 840px;
   }
-
   .footer_links li {
     text-align: center;
     width: 400px;
