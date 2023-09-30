@@ -610,8 +610,8 @@ footer, .footer_column, .titre-logo-footer, .logo-footer {
 }
 
 .spinner.hidden {
-  -webkit-animation: disappear 3s linear forwards;
-          animation: disappear 3s linear forwards;
+  -webkit-animation: disappear 1s linear forwards;
+          animation: disappear 1s linear forwards;
 }
 
 @-webkit-keyframes disappear {
